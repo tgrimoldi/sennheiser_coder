@@ -10,76 +10,109 @@
     <link rel="shortcut icon" href="Imagenes/Sennheiser_fvicon.png" type="image/x-icon"> 
     <!--insert de css  -->
     <link rel="stylesheet" href="estilos.css">
-    
-    <nav>
-        <div>
-            <div>
-                <ul class="MenuHome">
-                    <li> <img src="imagenes/icomenu.png" alt="Menú Sennheiser" width="50" height="50"></li>
-                    <li> <a href="Paginas/Auriculares.html" target="_blank">Auriculares</a></li>
-                    <li> <a href="Paginas/Profesionales.html" target="_blank">Profesionales</a></li>
-                    <li> <a href="Paginas/Novedades.html" target="_blank">Novedades</a></li>
-                    <li> <a href="Paginas/Contacto.html" target="_blank">Contacto </a> </li>
-                    <li>
-                        <DIV class="LogoHome">
-                        <img src="imagenes/logo_bl.png" alt="LOGO Sennheiser"width="600" height="100">    
-                        </DIV>
-                    </li>
-                </ul>
-            </div>
-            
-    </div>
-    </nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap" rel="stylesheet"> 
+    <!-- menu header -->
 </head>
-<body>
     
-        <div>
-        <video autoplay muted loop id="BGVideo">
-            <source src="Videos/Davina Moss, The Zoo Project, Ibiza 2019 Sennheiser.mp4" type="video/mp4">
+
+<body>
+    <Div id= "Grilla">
+    
+        <nav class="home__menu">
+         <div class="home__menu">   
+            <div class="home__menu--logo">
+            <img src="imagenes/logo_bl.png" alt="LOGO Sennheiser" width="400px" height="150px">          
+            </div> 
+            <div>
+                <ul class="home__menu home__menu--Items ul">
+                <!-- <li> <img src="imagenes/icomenu.png" alt="Menú Sennheiser" width="50px" height="50px"></li> -->
+                
+                 <li> <a href="Paginas/Auriculares.html" target="_blank">Auriculares</a>
+                    <!--el submenú lo dejamos comentado para usarlo 
+    
+                    <ul class="home__menu home__menu--Items ul li ul">
+                        <li> <a href="Paginas\Auricularhd458bt.html" target="_blank"> hd458bt </a></li>
+                    </ul> -->
+                </li>   
+                <li> <a href="Paginas/Profesionales.html" target="_blank">Profesionales</a></li>
+                <li> <a href="Paginas/Novedades.html" target="_blank">Novedades</a></li>
+                <li> <a href="Paginas/Contacto.html" target="_blank">Contacto </a> </li>
+            
+                 </ul>
+            </div>
+              
+         </div>           
+        </nav>
+
+    
+     <div>
+        <div class=Home__Video1--slider">
+        <video autoplay muted loop class="Home__Video1--slider">
+            <source src="Videos/Davina Moss, The Zoo Project, Ibiza 2019 Sennheiser.mp4" type="video/mp4" width="1000px">
         </video>
-        <div>
-   
         </div>
-        <div class="content">
+        <div class="Home__descVideo1--slider">
         <h1>Audio profesional</h1>
         <p>Enterate de lo nuevo</p>
         <!-- Boton a landing de Profesionales -->
-        <button class="myBtn" onclick="myFunction()"><a href="Paginas\LineaDJ.html">Ver Más</a></button>
-    </div>
-    </div>
-  
+        <button class="home__slider1__buttom" ><a href="Paginas\LineaDJ.html">Ver Más</a></button>
+        </div> 
+     </div>
   
 
-    <div>  
-        <img src="imagenes/banner_2067_16.jpg" alt="auriculares Sennheiser" width="100%">
-        <div class="bannerhome">
-            <h1>Auriculares</h1>
-            <!-- Boton a landing de auriculares -->
-           <button class="myBtn" onclick="myFunction()"><a href="Paginas\Auriculares.html">Ver Más</a></button> 
-        </div>
+    <div class="home__banner">  
+        <img src="imagenes/banner_2067_16.jpg" alt="auriculares Sennheiser" width="1000px">
+    </div>    
+    <div class="home__banner--desc ">
+        <!-- Boton a landing de auriculares -->
+           <button class="myBtn" onclick="myFunction()"><a href="Paginas\Auriculares.html">Ver Auriculares</a></button> 
     </div>
+    
 
-    <div>
+    <div class="home__articulo">
         <img src="imagenes/auriculares-sennheiser-hd458bt.jpg" alt="Auriculares Sennheiser HD458BT">
-        <div>
+    </div>
+    <div class="home__articulo--desc">
+            <h3>Más vendidos</h3>
+            <!-- Boton a landing de auricular hd458bt -->
+           <button class="home__articulo--desc myBtn" onclick="myFunction()"><a href="Paginas\Auricularhd458bt.html">Ver Más</a></button> 
+    </div>    
+   
+
+
+    <div class="home__novedad">
+        <img src="imagenes/auriculares-sennheiser-hd458bt.jpg" alt="Auriculares Sennheiser HD458BT">
+    </div>
+
+    <div class="home__novedad--desc">
             <h3>Más vendidos</h3>
             <!-- Boton a landing de auricular hd458bt -->
            <button class="myBtn" onclick="myFunction()"><a href="Paginas\Auricularhd458bt.html">Ver Más</a></button> 
-        </div>    
-    </div>
-</body>
+    </div>    
+  
 
 
-<footer class="FooterHome">
-    <hr>
-    <ul>
-    <li> <a href="Paginas/Contacto.html" target="_blank">Contacto </a> </li>
-    <li> <a href="Paginas/Auriculares.html" target="_blank">Auriculares</a></li>
-    <li> <a href="Paginas/Profesionales.html" target="_blank">Profesionales</a></li>
-    <li> <a href="" target="_blank">Nosotros</a></li>
-    <li> <a href="" target="_blank">Trabajá con nosotros</a></li>
+
     
-</ul>
 
-</footer>
+    <footer class= "home__footer">
+    <div>
+        <ul>
+        <li> <a href="Paginas/Contacto.html" target="_blank">Contacto </a> </li>
+        <li> <a href="Paginas/Auriculares.html" target="_blank">Auriculares</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+        <li> <a href="Paginas/Profesionales.html" target="_blank">Profesionales</a></li>
+        <li> <a href="" target="_blank">Nosotros</a></li>
+        <li> <a href="" target="_blank">Trabajá con nosotros</a></li>
+        </ul>      
+    </div>
+    </footer>
+    </Div>
+</body>
 </html>
