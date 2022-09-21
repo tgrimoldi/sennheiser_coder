@@ -48,7 +48,8 @@ align-content: space-between;
   position: relative;
   overflow: hidden;
 }
-video {
+
+video{
   position: absolute;
   left: 0;
   top: 0;
@@ -142,6 +143,20 @@ font-size: 3rem;
   {
     text-decoration:none;
     }
+/* nav hamburguesa bs */
+/* .nav_back  {
+  background-color: #000;
+  }  */
+
+    .masthead {
+      height: 100vh;
+      min-height: 500px;
+      background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
 /* HOME BANNER */
 .home__banner {
   position: static; 
@@ -223,7 +238,7 @@ background-color: black;
 }
 .home__articulo--desc button {
   text-decoration: none;
-background-color: black;
+  background-color: black;
   color: white;
   width: 100%;
 
@@ -321,16 +336,7 @@ text-decoration: none;
 /* NOVEDADES */
 
 
-    .nov__Video1--slider {
-      position: fixed;
-    left: 0;
-    top: 0;
-    width: 1000px;
-    height: 100%;
-    z-index: -1;
-    /*  z-index: 1 ; */
-      grid-area: nvideo ;
-     }
+
       
       /* contenido del video */
       .nov__descVideo1--slider {
@@ -350,6 +356,120 @@ text-decoration: none;
       }
 
 /* CIERRE NOVEDADES */
+
+
+/* contacto */
+
+.contacto_img {display: inline;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+/*   z-index: -1; hace que se vea todo blanco*/
+}
+.contacto__form {
+  position: relative;
+  transform: translate(0px, 50px);
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 70%;
+  padding-top: 5%; 
+/*   z-index: 2 ; */
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  grid-area: descvideo ;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.contacto__sect {
+  width: 100%;
+  min-height: 700px;
+  grid-area: menuse;
+ 
+}
+.contacto__footer {
+background-color: black;
+width: 100%;
+color: white;
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    background-color: #000;
+    
+  grid-area: footer;   
+   justify-content: space-evenly;
+   text-decoration-color: white;
+   align-content: center;
+ 
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;    
+    font-weight: 300;
+    
+}
+
+
+.contacto__footer ul {
+  list-style: none;
+  color: white;
+text-decoration: none;
+}
+
+.contacto__footer ul li a {
+  list-style: none;
+  color: white;
+text-decoration: none;
+}
+
+
+/* CIERRE CONTACTO */
+
+/* AURICULARES */
+:root {
+  --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) !important;
+}
+
+body {
+  background: #111 !important;
+}
+
+.card {
+  background: #222;
+  border: 1px solid #dd2476;
+  color: rgba(250, 250, 250, 0.8);
+  margin-bottom: 2rem;
+}
+
+.btn {
+  border: 5px solid;
+  border-image-slice: 1;
+  background: var(--gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  border-image-source:  var(--gradient) !important; 
+  text-decoration: none;
+  transition: all .4s ease;
+}
+
+.btn:hover, .btn:focus {
+      background: var(--gradient) !important;
+  -webkit-background-clip: none !important;
+  -webkit-text-fill-color: #fff !important;
+  border: 5px solid #fff !important; 
+  box-shadow: #222 1px 0 10px;
+  text-decoration: underline;
+}
+
+
+/* auriculares */
+
+.card {
+--bs-card-bg: #111;
+
+}
 
 
 /* media screen TABLET - INDEX */
@@ -392,6 +512,7 @@ height: 150px;
     ;
   }
 
+
   .imagen_mobile {
     display: inline;
     position: absolute;
@@ -411,7 +532,8 @@ video {
   .menu {
     flex-direction: column;
     justify-content: center;
-    height: 200px;
+    align-content: center;
+    height: 250px;
     margin:0;
     transform: translate(0px, 0px);
     border-radius: 0px;
@@ -429,7 +551,12 @@ video {
     margin-left: -100px;
     border-radius: 15px;
     }
-
+    .contacto__sect {
+      width: 100%;
+      min-height: 900px;
+      grid-area: menuse;
+     
+    }
 
 #GrillaNovedades {
 

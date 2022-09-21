@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- para el sitio responsive -->
 <head>
-    <title>Sennheiser Audio Pro</title>
+    <title>Contacto | Sennheiser</title>
     <!-- insert de favicon -->
     <link rel="shortcut icon" href="../Imagenes/Sennheiser_fvicon.png" type="image/x-icon"> 
     <!--insert de css  -->
@@ -13,15 +13,15 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap" rel="stylesheet"> 
-    <!-- menu header -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
 </head>
 <body>
-    <Div id= "Grilla">
+  
         <!-- MENÚ -->
-        <section id="sect1" class="sect">
-        <video src="../Videos/divina_moss.mp4" autoplay="true" muted="true" loop="true" width="100%"></video>
-        <div class="imagen_mobile"><img src="../imagenes/djprof_mobile.jpg" alt="dj pro" width="100%">
-        </div>
+        <section id="sect1" class="contacto__sect">
+        <img src="../Imagenes/contacto.png" alt="contacto" width="100%" class="contacto_img"></img>
         <section class="home__section"><!-- para alinear abajo el texto de audio profesional -->
         <section class="menu">
                <div class="logo">
@@ -42,39 +42,48 @@
                    <li> <a href="Contacto.html" target="_blank">Contacto </a> </li>
                 </ul>   
         </section>        
-        <section class="Home__descVideo1--slider">
-    <h1> Audio profesional</h1>
-        <p>Enterate de lo nuevo</p>
-        <!-- Boton a landing de Profesionales -->
-        <button class="home__slider1__buttom" ><a href="LineaDJ.html">Ver Más</a></button>
-        </section> 
-        </section> <!-- section para flex -->
-        </section>
-
-        <!-- FORMULARIO -->
-    <div class="contacto__formulario">
+        <section class="contacto__form">
+        <div>
         <h1>Tienes algo para decir?</h1>
-        <p>A través de este formulario puedes enviarnos un mensaje. Estaremos felices de contestarte tan pronto sea posible!
+        <p>A través de este formulario puedes enviarnos un mensaje. Estaremos felices de contestarte tan pronto como sea posible!
         </p>
-        <form action="" target="_blank">
-            <p>Nombre: <input type="text" name="nombre"></p>
-            <p>Mail: <input type="text" name="correo"></p>
-            <p> Tu mensaje:<br>
-            <textarea name="mensaje"></textarea>
-            <br>
-            <button id="myBtn" onclick="myFunction()">Enviar</button>
-        </form>
-        
-    </div>
-
-
-
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                <label for="inputZip" class="form-label">Código Postal</label>
+                <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">Ciudad</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <DIV>
+                <label for="floatingTextarea">Comentarios</label>
+                <textarea class="form-control" placeholder="Deja tu comentario aquí" id="floatingTextarea"></textarea>
+              
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary" style="--bs-btn-font-size: 2rem;">Enviar</button>
+                </div>
+              </form>
+            
+        </div>    
     
+    
+    
+    </section>
+    </section> <!-- section para flex -->
+    </section>
+
+   
 
 
 <!-- FOOTER -->
 
-<footer class= "home__footer">
+<footer class= "contacto__footer">
     
     <div>
         <ul>
@@ -90,6 +99,7 @@
         </ul>      
     </div>
     </footer>
-    </Div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
