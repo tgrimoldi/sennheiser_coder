@@ -558,6 +558,14 @@ flex-direction: column;
 justify-content: center;
 height: 150px;
     } 
+    .sect {
+      min-height: 400px;
+     }
+    .Home__descVideo1--slider {
+      font-size: 1.5rem;
+      width: 100%;
+      
+     }
 
   }
 
@@ -586,9 +594,9 @@ height: 150px;
     top: 0;
     height: 100%;
     width: 100%;
-    z-index: -1;
+/*     z-index: -1; por bootstrap*/
   } 
-video {
+  video {
     display: none;
   }
  /*  .home__section {
@@ -623,8 +631,16 @@ video {
       grid-area: menuse;
      
     }
+    .Home__descVideo1--slider {
+     font-size: 1.5rem;
+     width: 100%;
+    }
+  .sect {
+  min-height: 400px;
+ }
 
-#GrillaNovedades {
+
+  #GrillaNovedades {
 
   display: grid;
   grid-template-columns: .5fr .1fr .5fr .1fr ;
@@ -638,5 +654,5 @@ video {
   ;
  grid-row-gap: 0px;
  grid-column-gap: 0px;
- }
+  }
 }
