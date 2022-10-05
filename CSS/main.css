@@ -1,3 +1,80 @@
+@charset "UTF-8";
+.sect {
+  width: 100%;
+  min-height: 500px;
+  grid-area: menuse; }
+
+/* contacto */
+.contacto_img {
+  display: inline;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  /*   z-index: -1; hace que se vea todo blanco*/ }
+
+.contacto__form {
+  position: relative;
+  transform: translate(0px, 50px);
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 70%;
+  padding-top: 5%;
+  /*   z-index: 2 ; */
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  grid-area: descvideo;
+  justify-content: center;
+  align-items: center;
+  margin: 0; }
+
+.contacto__sect {
+  width: 100%;
+  min-height: 700px;
+  grid-area: menuse; }
+
+.contacto__footer {
+  background-color: black;
+  width: 100%;
+  color: white;
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row;
+  background-color: #000;
+  grid-area: footer;
+  justify-content: space-evenly;
+  text-decoration-color: white;
+  align-content: center;
+  font-size: 1.5rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300; }
+
+.contacto__footer ul {
+  list-style: none;
+  color: white;
+  text-decoration: none; }
+
+.contacto__footer ul li a {
+  list-style: none;
+  color: white;
+  text-decoration: none; }
+
+/* CIERRE CONTACTO */
+.ambeo {
+  font-family: 'SennheiserNeue', Helvetica,sans-serif; }
+
+/* reset margin y padding */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* relación de tamaño */
+html {
+  font-size: 62.5%;
+  background-color: #000; }
+
 .sect {
   width: 100%;
   min-height: 500px;

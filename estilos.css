@@ -12,18 +12,31 @@ html {
 /* HOME */
 #Grilla{
  display: grid;
- grid-template-columns: 1fr 1fr;
+ grid-template-columns: 1fr;
  grid-template-rows: 1fr .2fr .2fr .1fr;
  grid-template-areas: 
- "menuse menuse"
+ "menuse"
  /* "descvideo descvideo" */
- "banner banner"
- "articulo novedad"
- "footer footer" 
+ "banner"
+ "grilla_media"
+ "footer" 
  ;
 grid-row-gap: 0px;
 grid-column-gap: 0px;
 }
+
+#Grilla_media
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .2fr;
+  grid-template-areas: 
+  "arti nove"
+  ;
+ grid-row-gap: 0px;
+ grid-column-gap: 0px;
+ }
+
 /* para aplicar el flex y que quede lo de audio profesional abajo del video */
 .home__section {
 display: flex;  
@@ -35,7 +48,7 @@ align-content: space-between;
 .sect {
   width: 100%;
   grid-area: menuse;
- 
+  min-height: 500px;
 }
 #sect1,
 #sect3 {
@@ -48,6 +61,12 @@ align-content: space-between;
   overflow: hidden;
 }
 
+.img_logo-m {
+ display: none;
+}
+.img_logo {
+  display: flex;
+ }
 
 video{
   position: absolute;
@@ -159,7 +178,7 @@ font-size: 3rem;
     
 /* HOME BANNER */
 .home__banner {
-  position: static; 
+  position: static;
   right: 0;
   bottom: 0;
   width: 100%;
@@ -168,11 +187,9 @@ font-size: 3rem;
   grid-area: banner;
   display: flex;
   flex-direction: column;
-  align-items: left;
-/*   justify-content: center; */
-  }
+   }
 .home__banner--desc {
-  position: relative;
+  position: static;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
 /*   color: #f1f1f1; */
@@ -201,6 +218,7 @@ color: white;
 }
 .home__articulo {
   position: static; 
+  max-height: 500px;
   right: 0;
   bottom: 0;
   display: flex;
@@ -208,7 +226,7 @@ color: white;
   background: rgba(0, 0, 0, 0.5);
   align-items: center;
   font-family: 'Lato', sans-serif;
-  grid-area: articulo ;
+  grid-area: arti;
   justify-content: center;
 
 }
@@ -244,13 +262,15 @@ background-color: black;
 
 } 
 .home__novedad {
-  /* position: static;  */
+  position: static; 
+  max-height: 500px;
+
   right: 0;
   bottom: 0;
   display: flex;
   flex-direction: column;
   font-family: 'Lato', sans-serif;
-  grid-area: novedad ;
+  grid-area: nove;
   justify-content: space-around;
   align-content: center;
   text-decoration: none;
@@ -540,16 +560,16 @@ body {
 
 /* media screen TABLET - INDEX */
 @media screen and (max-width: 768px) {
-  #Grilla {
+  #Grilla_media {
     grid-template-columns: 1fr;
-    grid-template-rows: .2fr .2fr .2fr .2fr .2fr;
+    grid-template-rows: .2fr .2fr; /* .1fr .1fr .2fr */
     grid-template-areas: 
     
-    "menuse"
-    "banner"
-    "articulo" 
-    "novedad"
-    "footer"
+    /* "menuse" */
+    /* "banner" */
+    "arti" 
+    "nove"
+    /* "footer" */
     
     ;
   }
@@ -572,17 +592,37 @@ height: 150px;
 
 
 /* media screen MOBILE - INDEX */
-@media screen and (max-width: 505px) {
-  #Grilla {
+
+@media screen and (max-width: 438px) {
+
+.img_logo {
+  display: none !important;
+}
+.img_logo-m {
+  display: flex;
+  align-items: center;
+ }
+ 
+
+
+}
+
+
+
+
+@media screen and (max-width: 550px) {
+  #Grilla_media {
     grid-template-columns: 1fr;
-    grid-template-rows: .1fr .1fr .2fr .2fr .2fr .2fr;
+    grid-template-rows: .2fr .2fr; /* .1fr .1fr .2fr */
     grid-template-areas: 
-    "menuse" 
-    "video" 
-    "banner" 
-    "articulo"
-    "novedad" 
-    "footer"
+    
+    /* "menuse" */
+    /* "banner" */
+    "arti" 
+    "nove"
+    /* "footer" */
+    
+    
     ;
   }
 
@@ -649,7 +689,10 @@ height: 150px;
  }
  */
 
-  #GrillaNovedades {
+
+
+ 
+/*   #GrillaNovedades {
 
   display: grid;
   grid-template-columns: .5fr .1fr .5fr .1fr ;
@@ -663,5 +706,5 @@ height: 150px;
   ;
  grid-row-gap: 0px;
  grid-column-gap: 0px;
-  }
+  } */
 }

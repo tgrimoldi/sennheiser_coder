@@ -15,38 +15,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap" rel="stylesheet"> 
    <!-- CSS only -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+   <!-- META DESCRIPTION -->
+   <meta name="description" content="Sitio oficial de Sennheiser. Desarrolladores alemanes de audio profesional y hogareño de máxima calidad">
+  <!-- KEYWORDS -->
+  <meta name="keywords" content="Audio profesional, auriculares, barras de sonido, headphones, home theater systems, headsets, dj, best headphone, bluetooth wireless accessories, home theater 5.1, on ear, best headset 2021, best headset 2020, bluetooth surround, headset 2020">
 </head>
 <body>
-    <Div id= "Grilla">
-        <!-- MENÚ -->
+  
+    <Div  class="d-flex flex-wrap">
+
+       <!-- MENÚ -->
         <section id="sect1" class="sect">
         <!-- <div class="video_home"> -->
         <video src="Videos/divina_moss.mp4" autoplay="true" muted="true" loop="true" width="100%"></video>
        <!--  </div> -->
-        <div class="imagen_mobile"><img src="imagenes/djprof_mobile.jpg" alt="dj pro" width="100%">
+        <div class="imagen_mobile"><img src="Imagenes/djprof_mobile.jpg" alt="dj pro" width="100%">
         </div>
         <section class="home__section"><!-- para alinear abajo el texto de audio profesional -->
-<!--         <section class="menu">
-            
-               <div class="logo">
-               <img src="imagenes/logo_sennheiser.png" alt="LOGO Sennheiser" width="400px" height="90px">          
-               </div> 
-                <ul class="menu__items">
-                   
-                   
-                    <li> <a href="Paginas/Auriculares.html" target="_blank">Auriculares</a>
-                       
-                   </li>   
-                   <li> <a href="paginas/Profesionales.html" target="_blank">Profesionales</a></li>
-                   <li> <a href="paginas/Novedades.html" target="_blank">Novedades</a></li>
-                   <li> <a href="paginas/Contacto.html" target="_blank">Contacto </a> </li>
-                </ul>   
-        </section> -->        
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow fixed-top1 rounded-3">
+           <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow fixed-top1 rounded-3">
             <div class="container-fluid">
-            <!--   <div class="nav_back">  -->     
-              <a class="navbar-brand" href="#"><img src="imagenes/logo_sennheiser.png" alt="LOGO Sennheiser"></a>
+            <!--  LOGOS -->     
+            <div class="Navbar-brand">
+              <!-- logo site -->
+              <a class="navbar-brand img_logo" href="#">
+                <img class="img_logo pt-4" src="Imagenes/logo_sennheiser.png" alt="LOGO Sennheiser">
+              </a>
+              <!-- logo mobile -->
+              <a class="navbar-brand" href="#">
+                <img class="img_logo-m pt-4" src="Imagenes/logo_sennheiser_m.png" alt="LOGO Sennheiser">
+              </a>
+            </div>
               <button class="navbar-toggler bg-black border border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -79,20 +77,21 @@
         </section>
   
 <!-- PRIMER BANNER -->
-    <div class="home__banner">  
-       <img src="imagenes/banner_2067_16.jpg" alt="auriculares Sennheiser" width="100%">      
+    <div class="home__banner col-12">  
+       <img src="Imagenes/banner_2067_16.jpg" alt="auriculares Sennheiser">      
        <div class="home__banner--desc">
         <!-- Boton a landing de auriculares -->
      <button><a href="Paginas\Auriculares.html">Ver Auriculares</a></button> 
     
       <!--  <a href="Paginas\Auriculares.html">Ver Auriculares</a> --> 
          
-    </div>
+      </div>
     </div>
     
 <!-- ARTICULO -->
-    <div class="home__articulo">
-        <img src="imagenes/auriculares-sennheiser-hd458bt.jpg" alt="Auriculares Sennheiser HD458BT" height="100%" width="100%">
+<div id="Grilla_media" class="mt-2 col-12">
+    <div class="home__articulo col-12">
+        <img src="Imagenes/auriculares-sennheiser-hd458bt.jpg" alt="Auriculares Sennheiser HD458BT" height="100%" width="100%">
     
     <div class="home__articulo--desc">
             <h3>Más vendidos</h3>
@@ -103,8 +102,8 @@
    
 <!-- NOVEDAD -->
 
-    <div class="home__novedad">
-        <img src="imagenes/soundbar_home.jpg" alt="Auriculares Sennheiser HD458BT" height="100%">
+    <div class="home__novedad col-12">
+        <img src="Imagenes/soundbar_home.jpg" alt="Auriculares Sennheiser HD458BT" height="100%" width="100%">
     
 
     <div class="home__novedad--desc">
@@ -112,10 +111,10 @@
             <button><a href="Paginas\Auricularhd458bt.html" target="_blank">Ver Más</a></button> 
     </div>    
     </div>
-
+</div>
 <!-- FOOTER -->
 
-    <footer class= "home__footer">
+    <footer class= "home__footer col-12">
     
     <div>
         <ul>
@@ -132,6 +131,7 @@
     </div>
     </footer>
     </Div>
+  
  <!-- JavaScript Bundle with Popper -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>

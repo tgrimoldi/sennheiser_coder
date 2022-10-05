@@ -1,17 +1,20 @@
-.sect {
-    width: 100%;
-    min-height: 500px;
-    grid-area: menuse;
-    
-    .imagen_mobile {
-        display: none;
-    } 
-    
-    .home__section {
-        display: flex;  
-        flex-direction: column;
-        justify-content: space-between;
-        align-content: space-between;
-        
+@import "index";
+@import "contacto";
+@import "novedades";
+@import "menu";
+
+
+
+
+/* reset margin y padding */
+* {
+    margin: 0;
+    padding:0;
+}
+/* relación de tamaño */
+  html {
+    font-size: 62.5%;
+    background-color: #000;
     }
- }
+    
+

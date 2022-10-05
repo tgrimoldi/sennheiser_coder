@@ -1,7 +1,16 @@
-.sect {
+ .sect {
     width: 100%;
     min-height: 500px;
     grid-area: menuse;
-   
+    
+    .imagen_mobile {
+        display: none;
+    } 
+    .home__section {
+        display: flex;  
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+        
+    }
  }
- 
