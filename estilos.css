@@ -9,7 +9,7 @@ html {
   background-color: #000;
   }
 
-/* HOME */
+/* HOME  */
 #Grilla{
  display: grid;
  grid-template-columns: 1fr;

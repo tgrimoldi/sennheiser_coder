@@ -1,4 +1,15 @@
- .sect {
+#sect1,
+#sect3 {
+  /* background-color: #3333337d; */
+  color: #fff;
+}
+
+#sect1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.sect {
     width: 100%;
     min-height: 500px;
     grid-area: menuse;
@@ -14,3 +25,29 @@
         
     }
  }
+ #Grilla{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .2fr .2fr .1fr;
+    grid-template-areas: 
+    "menuse"
+    /* "descvideo descvideo" */
+    "banner"
+    "grilla_media"
+    "footer" 
+    ;
+   grid-row-gap: 0px;
+   grid-column-gap: 0px;
+   }
+   
+   #Grilla_media
+   {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: .2fr;
+     grid-template-areas: 
+     "arti nove"
+     ;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    }

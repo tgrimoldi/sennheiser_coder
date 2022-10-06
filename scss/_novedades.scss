@@ -1,6 +1,29 @@
-/* HTML NOVEDADES */
+/* VARIABLES */
+
+$p-fonts-ambeo: 'SennheiserNeue', Helvetica,sans-serif;
+
+
+/* NOVEDADES */
+
 .ambeo {
     font-family: $p-fonts-ambeo;
    }
-
-/* CIERRE HTML NOVEDADES */
+         
+         /* contenido del video */
+         .nov__descVideo1--slider {
+             position: relative;
+             bottom: 0;
+             background: rgba(0, 0, 0, 0.5);
+             color: #f1f1f1;
+             width: 1000px;
+             padding: 0 px;
+           /*   z-index: 2 ; */
+             font-family: 'Lato', sans-serif;
+             grid-area: descvideo ;
+             justify-content: center;
+             align-items: center;
+   
+             z-index: -1;
+         }
+   
+   /* CIERRE NOVEDADES */
