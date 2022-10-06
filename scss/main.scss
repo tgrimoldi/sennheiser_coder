@@ -2,6 +2,7 @@
 @import "contacto";
 @import "novedades";
 @import "menu";
+@import "variables";
 
 
 
@@ -20,10 +21,8 @@ html {
 
 /* para aplicar el flex y que quede lo de audio profesional abajo del video */
 .home__section {
-display: flex;  
-flex-direction: column;
-justify-content: space-between;
-align-content: space-between;
+@include flex-column-space;
+align-content: space-between; 
 
 }
 .sect {
@@ -43,7 +42,7 @@ align-content: space-between;
 }
 
 .img_logo-m {
- display: none;
+  @include oculto;
 }
 .img_logo {
   display: flex;
@@ -58,7 +57,7 @@ video{
   
 }
 .imagen_mobile {
-  display: none;
+  @include oculto;
 } 
 
 
@@ -173,9 +172,7 @@ font-size: 3rem;
   position: static;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-/*   color: #f1f1f1; */
   width: 100%;
-  /*   z-index: 2 ; */
   font-family: 'Lato', sans-serif;
   font-size: 2rem;
  }
@@ -188,7 +185,6 @@ font-size: 3rem;
   width: 100%;
   padding-top: 1%;
   padding-bottom: 1%;
-/*   z-index: 2 ; */
   font-family: 'Lato', sans-serif;
   font-size: 2rem;
   
@@ -204,11 +200,11 @@ color: white;
   bottom: 0;
   display: flex;
   flex-direction: column;
-  background: rgba(0, 0, 0, 0.5);
-  align-items: center;
   font-family: 'Lato', sans-serif;
+  justify-content: space-around;
+  align-content: center;
+  text-decoration: none;
   grid-area: arti;
-  justify-content: center;
 
 }
 
@@ -243,18 +239,8 @@ background-color: black;
 
 } 
 .home__novedad {
-  position: static; 
-  max-height: 500px;
-
-  right: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Lato', sans-serif;
+ @extend .home__articulo;
   grid-area: nove;
-  justify-content: space-around;
-  align-content: center;
-  text-decoration: none;
 }
 
   .home__novedad--desc {
@@ -300,31 +286,29 @@ h3 {
 
 
 hr {
-color: white;
-border:2px #ddd;
-width: 1000px;
+ color: white;
+ border:2px #ddd;
+ width: 1000px;
 }
 .home__footer {
-    color: white;
-    list-style: none;
-    display: inline-flex;
-    flex-direction: row;
-    background-color: #000;
-   grid-area: footer;   
-   justify-content: space-evenly;
-   text-decoration-color: white;
-   align-content: center;
- 
-    font-size: 1.5rem;
-    font-family: 'Lato', sans-serif;    
-    font-weight: 300;
-    
+  color: white;
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row;
+  background-color: #000;
+  grid-area: footer;   
+  justify-content: space-evenly;
+  text-decoration-color: white;
+  align-content: center;
+  font-size: 1.5rem;
+  font-family: 'Lato', sans-serif;    
+  font-weight: 300; 
 }
 
 .home__footer ul {
-  list-style: none;
-  color: white;
-text-decoration: none;
+ list-style: none;
+ color: white;
+ text-decoration: none;
 }
 
 .home__footer ul li a {
@@ -427,7 +411,7 @@ body {
 @media screen and (max-width: 768px) {
   #Grilla_media {
     grid-template-columns: 1fr;
-    grid-template-rows: .2fr .2fr; /* .1fr .1fr .2fr */
+    grid-template-rows: .2fr .2fr;
     grid-template-areas: 
     "arti" 
     "nove"
@@ -473,7 +457,7 @@ body {
 @media screen and (max-width: 550px) {
   #Grilla_media {
     grid-template-columns: 1fr;
-    grid-template-rows: .2fr .2fr; /* .1fr .1fr .2fr */
+    grid-template-rows: .2fr .2fr;
     grid-template-areas: 
     
     /* "menuse" */
@@ -544,29 +528,7 @@ body {
      font-size: 1.5rem;
      width: 100%;
     }
- /*  .sect {
-  min-height: 400px;
- }
- */
 
-
-
- 
-/*   #GrillaNovedades {
-
-  display: grid;
-  grid-template-columns: .5fr .1fr .5fr .1fr ;
-  grid-template-rows: .2fr .3fr .3fr .5fr .2fr ;
-  grid-template-areas: 
-  "menuse menuse menuse menuse"
-  "video video descvideo descvideo"
-  "banner banner descripbanner descripbanner"
-  "articulo descarticulo novedad descnovedad"
-  "footer footer footer footer" 
-  ;
- grid-row-gap: 0px;
- grid-column-gap: 0px;
-  } */
 }
 
 

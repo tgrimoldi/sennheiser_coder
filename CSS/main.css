@@ -115,6 +115,11 @@
   z-index: -1; }
 
 /* CIERRE NOVEDADES */
+/* mixins */
+/* @include flex-row-center */
+/* @include flex-column-space */
+/* @include oculto */
+/* @extend en .home_novedad en el main */
 /* reset margin y padding */
 * {
   margin: 0;
@@ -262,9 +267,7 @@ a:link, a:visited, a:active {
   position: static;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  /*   color: #f1f1f1; */
   width: 100%;
-  /*   z-index: 2 ; */
   font-family: 'Lato', sans-serif;
   font-size: 2rem; }
 
@@ -277,7 +280,6 @@ a:link, a:visited, a:active {
   width: 100%;
   padding-top: 1%;
   padding-bottom: 1%;
-  /*   z-index: 2 ; */
   font-family: 'Lato', sans-serif;
   font-size: 2rem; }
 
@@ -285,18 +287,18 @@ a:link, a:visited, a:active {
   text-decoration: none;
   color: white; }
 
-.home__articulo {
+.home__articulo, .home__novedad {
   position: static;
   max-height: 500px;
   right: 0;
   bottom: 0;
   display: flex;
   flex-direction: column;
-  background: rgba(0, 0, 0, 0.5);
-  align-items: center;
   font-family: 'Lato', sans-serif;
-  grid-area: arti;
-  justify-content: center; }
+  justify-content: space-around;
+  align-content: center;
+  text-decoration: none;
+  grid-area: arti; }
 
 .home__articulo--desc {
   position: relative;
@@ -327,17 +329,7 @@ a:link, a:visited, a:active {
   width: 100%; }
 
 .home__novedad {
-  position: static;
-  max-height: 500px;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Lato', sans-serif;
-  grid-area: nove;
-  justify-content: space-around;
-  align-content: center;
-  text-decoration: none; }
+  grid-area: nove; }
 
 .home__novedad--desc {
   position: static;
@@ -479,7 +471,6 @@ body {
   #Grilla_media {
     grid-template-columns: 1fr;
     grid-template-rows: .2fr .2fr;
-    /* .1fr .1fr .2fr */
     grid-template-areas: "arti"  "nove"; }
   .menu {
     flex-direction: column;
@@ -503,7 +494,6 @@ body {
   #Grilla_media {
     grid-template-columns: 1fr;
     grid-template-rows: .2fr .2fr;
-    /* .1fr .1fr .2fr */
     grid-template-areas: "arti" "nove"; }
   .imagen_mobile {
     display: inline !important;
@@ -546,23 +536,4 @@ body {
     grid-area: menuse; }
   .Home__descVideo1--slider {
     font-size: 1.5rem;
-    width: 100%; }
-  /*  .sect {
-  min-height: 400px;
- }
- */
-  /*   #GrillaNovedades {
-
-  display: grid;
-  grid-template-columns: .5fr .1fr .5fr .1fr ;
-  grid-template-rows: .2fr .3fr .3fr .5fr .2fr ;
-  grid-template-areas: 
-  "menuse menuse menuse menuse"
-  "video video descvideo descvideo"
-  "banner banner descripbanner descripbanner"
-  "articulo descarticulo novedad descnovedad"
-  "footer footer footer footer" 
-  ;
- grid-row-gap: 0px;
- grid-column-gap: 0px;
-  } */ }
+    width: 100%; } }

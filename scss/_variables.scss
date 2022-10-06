@@ -1,1 +1,24 @@
 $p-fonts-ambeo: 'SennheiserNeue', Helvetica,sans-serif;
+
+/* mixins */
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+/* @include flex-row-center */
+
+@mixin flex-column-space {
+display: flex;  
+flex-direction: column;
+justify-content: space-between;
+}
+/* @include flex-column-space */
+
+@mixin oculto {
+    display:none;
+}
+/* @include oculto */
+
+/* @extend en .home_novedad en el main */
