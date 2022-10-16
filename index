@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- para el sitio responsive -->
+    
+<head>
+    <title>Sennheiser Audio Pro</title>
+    <!-- insert de favicon -->
+    <link rel="shortcut icon" href="Imagenes/Sennheiser_fvicon.png" type="image/x-icon"> 
+    <!--insert de css  -->
+    <link rel="stylesheet" href="estilos.css">
+    
+    <nav>
+        <div>
+            <div>
+                <ul class="MenuHome">
+                    <li> <img src="imagenes/icomenu.png" alt="Menú Sennheiser" width="50" height="50"></li>
+                    <li> <a href="Paginas/Auriculares.html" target="_blank">Auriculares</a></li>
+                    <li> <a href="Paginas/Profesionales.html" target="_blank">Profesionales</a></li>
+                    <li> <a href="Paginas/Novedades.html" target="_blank">Novedades</a></li>
+                    <li> <a href="Paginas/Contacto.html" target="_blank">Contacto </a> </li>
+                    <li>
+                        <DIV class="LogoHome">
+                        <img src="imagenes/logo_bl.png" alt="LOGO Sennheiser"width="600" height="100">    
+                        </DIV>
+                    </li>
+                </ul>
+            </div>
+            
+    </div>
+    </nav>
+</head>
+<body>
+    
+        <div>
+        <video autoplay muted loop id="BGVideo">
+            <source src="Videos/Davina Moss, The Zoo Project, Ibiza 2019 Sennheiser.mp4" type="video/mp4">
+        </video>
+        <div>
+   
+        </div>
+        <div class="content">
+        <h1>Audio profesional</h1>
+        <p>Enterate de lo nuevo</p>
+        <!-- Boton a landing de Profesionales -->
+        <button class="myBtn" onclick="myFunction()"><a href="Paginas\LineaDJ.html">Ver Más</a></button>
+    </div>
+    </div>
+  
+  
+
+    <div>  
+        <img src="imagenes/banner_2067_16.jpg" alt="auriculares Sennheiser" width="100%">
+        <div class="bannerhome">
+            <h1>Auriculares</h1>
+            <!-- Boton a landing de auriculares -->
+           <button class="myBtn" onclick="myFunction()"><a href="Paginas\Auriculares.html">Ver Más</a></button> 
+        </div>
+    </div>
+
+    <div>
+        <img src="imagenes/auriculares-sennheiser-hd458bt.jpg" alt="Auriculares Sennheiser HD458BT">
+        <div>
+            <h3>Más vendidos</h3>
+            <!-- Boton a landing de auricular hd458bt -->
+           <button class="myBtn" onclick="myFunction()"><a href="Paginas\Auricularhd458bt.html">Ver Más</a></button> 
+        </div>    
+    </div>
+</body>
+
+
+<footer class="FooterHome">
+    <hr>
+    <ul>
+    <li> <a href="Paginas/Contacto.html" target="_blank">Contacto </a> </li>
+    <li> <a href="Paginas/Auriculares.html" target="_blank">Auriculares</a></li>
+    <li> <a href="Paginas/Profesionales.html" target="_blank">Profesionales</a></li>
+    <li> <a href="" target="_blank">Nosotros</a></li>
+    <li> <a href="" target="_blank">Trabajá con nosotros</a></li>
+    
+</ul>
+
+</footer>
+</html>
