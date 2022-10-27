@@ -15,18 +15,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap" rel="stylesheet"> 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-     <!-- META DESCRIPTION -->
+    <!-- ÍCONOS rrss -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- META DESCRIPTION -->
     <meta name="description" content="Contactanos y estaremos felices de responderte tan pronto sea posible">
     <!-- KEYWORDS -->
-<meta name="keywords" content="Audio profesional, auriculares, barras de sonido, headphones, home theater systems, headsets, dj, best headphone, bluetooth wireless accessories, home theater 5.1, on ear, best headset 2021, best headset 2020, bluetooth surround, headset 2020">
+    <meta name="keywords" content="Audio profesional, auriculares, barras de sonido, headphones, home theater systems, headsets, dj, best headphone, bluetooth wireless accessories, home theater 5.1, on ear, best headset 2021, best headset 2020, bluetooth surround, headset 2020">
 </head>
-<body>
-  
-        <!-- MENÚ -->
-        <section id="sect1" class="contacto__sect">
-        <img src="../Imagenes/contacto.png" alt="contacto" width="100%" class="contacto_img"></img>
-        <section class="home__section">
-          <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow fixed-top1 rounded-3">
+<body> 
+<!-- MENÚ -->
+  <section id="sect1" class="contacto__sect">
+    <img src="../Imagenes/contacto.png" alt="contacto" width="100%" class="contacto_img"></img>
+    <section class="home__section">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow fixed-top1 rounded-3">
             <div class="container-fluid">
            <!--  LOGOS -->
             <div class="Navbar-brand">
@@ -58,64 +59,83 @@
                 </ul>
               </div>
             </div>
-          </nav>    
-        <section class="contacto__form">
-        <div>
-        <h1>Tienes algo para decir?</h1>
+      </nav>
+<!-- Form, dentro del sect-->
+      <section class="contacto__form d-flex justify-content-center">
+        <div class="row align-items-center p-3">
+        <h1> <strong> Tienes algo para decir?</strong></h1>
         <p>A través de este formulario puedes enviarnos un mensaje. Estaremos felices de contestarte tan pronto como sea posible!
         </p>
-            <form class="row g-3">
-                <div class="col-md-6">
-                  <label for="inputEmail4" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4">
-                </div>
-                <div class="col-md-6">
-                <label for="inputZip" class="form-label">Código Postal</label>
-                <input type="text" class="form-control" id="inputZip">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputCity" class="form-label">Ciudad</label>
-                  <input type="text" class="form-control" id="inputCity">
-                </div>
-                <DIV>
-                <label for="floatingTextarea">Comentarios</label>
-                <textarea class="form-control" placeholder="Deja tu comentario aquí" id="floatingTextarea"></textarea>
-              
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn btn-primary" style="--bs-btn-font-size: 2rem;"> Enviar </button>
-                </div>
-              </form>
-            
-        </div>    
-    
-    
-    
-    </section>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputZip" class="form-label">Código Postal</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Ciudad</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div>
+            <label for="floatingTextarea">Comentarios</label>
+            <textarea class="form-control" placeholder="Deja tu comentario aquí" id="floatingTextarea"></textarea>
+          </div>
+          <div class="col-12">
+            <div class="d-flex justify-content-end">
+              <button type="submit" class="btn btn-primary " style="--bs-btn-font-size: 2rem;"> Enviar </button>
+            </div>
+          </div>
+        </form>    
+        </div>      
+      </section>
     </section> <!-- section para flex -->
-    </section>
-
-   
-
-
+  </section>
 <!-- FOOTER -->
-
-<footer class= "contacto__footer">
-    
-    <div>
-        <ul>
-        <li> <a href="Paginas/Contacto.html" target="_blank">Contacto </a> </li>
-        <li> <a href="Paginas/Auriculares.html" target="_blank">Auriculares</a></li>
-        </ul>
-        </div>
-    <div>
-        <ul>
-        <li> <a href="Paginas/Profesionales.html" target="_blank">Profesionales</a></li>
-        <li> <a href="" target="_blank">Nosotros</a></li>
-        <li> <a href="" target="_blank">Trabajá con nosotros</a></li>
-        </ul>      
+<footer class= "home__footer flex-wrap col-12 mt-4 PT-4 ">
+  <div class="d-flex row">
+  <div class="col-4 pt-4">
+      <ul>
+      <li> <a href="..//Paginas/Contacto.html" target="_blank">Contacto </a> </li>
+      <li> <a href="..//Paginas/Auriculares.html" target="_blank">Auriculares</a></li>
+      </ul>
+  </div>
+  <div class="col-4 pt-4">
+      <ul>
+      <li> <a href="..//Paginas/Profesionales.html" target="_blank">Profesionales</a></li>
+      <li> <a href="..//Paginas/Novedades.html" target="_blank">Novedades</a></li>
+      <li> <a href="..//Paginas/Auricularhd800s.html" target="_blank">Auricular HD800s</a></li>
+      </ul>      
+  </div>
+</div>
+   <!-- div rrss -->
+   <div class="d-flex align-items-START justify-content-end home__rrss COL-4 MT-3 pt-4">
+    <div class="home__rrss mx-2">
+      <h3><p class="text-white"><strong> Seguinos en:</strong></p></h3>
     </div>
-    </footer>
+    <DIV class="home__rrss"><!-- div iconos -->
+      <!-- Facebook -->
+      <a class="btn btn-primary" style="background-color: #3b5998;" href="https://www.facebook.com/Sennheiser/" target="_blank" role="button"> <i class="fa fa-facebook-f fs-3 mx-2"></i></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-primary" style="background-color: #55acee;" href="https://twitter.com/sennheiser?s=21&t=Vp6w9BCajoB3bQJa9DCHNw" target="_blank" role="button"
+      ><i class="fa fa-twitter fs-3"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-primary" style="background-color: #ac2bac;" href="https://instagram.com/sennheiser?igshid=YmMyMTA2M2Y=" target="_blank"  role="button"
+      ><i class="fa fa-instagram fs-3"></i
+      ></a>
+
+      <!-- Whatsapp -->
+      <a class="btn btn-primary" style="background-color: #25d366;" href="#!" role="button"
+        ><i class="fa fa-whatsapp fs-3"></i
+      ></a>
+    </DIV>
+  </div>
+  </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>

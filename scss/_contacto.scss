@@ -19,10 +19,11 @@
   /*   z-index: 2 ; */
     font-family: 'Lato', sans-serif;
     font-size: 2rem;
-    grid-area: descvideo ;
+    grid-area: descvideo;
+    display:flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin-left: 15%;
   }
   
   .contacto__sect {
@@ -31,6 +32,8 @@
     grid-area: menuse;
    
   }
+
+
   .contacto__footer {
   background-color: black;
   width: 100%;

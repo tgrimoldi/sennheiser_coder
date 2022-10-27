@@ -3,6 +3,7 @@
 @import "novedades";
 @import "menu";
 @import "variables";
+@import "vistaproducto";
 
 
 
@@ -64,8 +65,8 @@ video{
 h1 {
 font-size: 3rem;
 }
-.menu
-{
+
+.menu {
   background-color: black;
   height: 90px;
   transform: translate(0px, 20px);
@@ -75,8 +76,7 @@ font-size: 3rem;
   flex-direction:row ;
   justify-content:space-between;
   align-items: center;
-  
-  }
+}
 
 .logo{
 /*   background-color: black; */
@@ -108,7 +108,7 @@ font-size: 3rem;
     padding-top: 5%; 
   /*   z-index: 2 ; */
     font-family: 'Lato', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     grid-area: descvideo ;
     justify-content: center;
     align-items: center;
@@ -118,8 +118,8 @@ font-size: 3rem;
   /* Botón del video */
   .home__slider1__buttom {
     color: #fff;
-    width: 200px;
-    font-size: 18px;
+   /*  width: 200px; */
+    /* font-size: 1.5rem; */
     padding: 10px;
     border: none;
     background: #000;
@@ -211,6 +211,7 @@ color: white;
   font-family: 'Lato', sans-serif;
  /*  grid-area: descarticulo ; */
  color: white;
+ background-color: black;
  width: 100%;
  font-size: 2rem;
  display: flex;
@@ -237,6 +238,7 @@ background-color: black;
 .home__novedad {
  @extend .home__articulo;
   grid-area: nove;
+  background-color: black;
 }
 .videoWrapper {
   position: relative;
@@ -302,7 +304,7 @@ hr {
 .home__footer {
   color: white;
   list-style: none;
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   background-color: #000;
   grid-area: footer;   
@@ -311,7 +313,8 @@ hr {
   align-content: center;
   font-size: 1.5rem;
   font-family: 'Lato', sans-serif;    
-  font-weight: 300; 
+  font-weight: 300;
+  border-top: 2px solid white;
 }
 
 .home__footer ul {
@@ -326,7 +329,10 @@ hr {
 text-decoration: none;
 }
 
-
+.home__rrss
+{
+  background-color:black;
+}
 /* AURICULARES */
 :root {
   --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) !important;
